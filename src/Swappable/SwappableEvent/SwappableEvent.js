@@ -90,4 +90,13 @@ export class SwappableSwappedEvent extends SwappableEvent {
  */
 export class SwappableStopEvent extends SwappableEvent {
   static type = 'swappable:stop';
+  /**
+   * The draggable element that you swapped with
+   * @property swappedElement
+   * @type {HTMLElement}
+   * @readonly
+   */
+  get swappedElement() {
+    return this.data.swappedElement;
+  }
 }
